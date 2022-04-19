@@ -1,10 +1,13 @@
-@charset "UTF-8";
+/* full-star */
 .rating[data-rating="5.5"] .rating__item:nth-child(-n+5):after, .rating[data-rating="5"] .rating__item:nth-child(-n+5):after, .rating[data-rating="4.5"] .rating__item:nth-child(-n+4):after, .rating[data-rating="4"] .rating__item:nth-child(-n+4):after, .rating[data-rating="3.5"] .rating__item:nth-child(-n+3):after, .rating[data-rating="3"] .rating__item:nth-child(-n+3):after, .rating[data-rating="2.5"] .rating__item:nth-child(-n+2):after, .rating[data-rating="2"] .rating__item:nth-child(-n+2):after, .rating[data-rating="1.5"] .rating__item:nth-child(-n+1):after, .rating[data-rating="1"] .rating__item:nth-child(-n+1):after, .rating[data-rating="0.5"] .rating__item:nth-child(-n+0):after, .rating[data-rating="0"] .rating__item:nth-child(-n+0):after {
-  content: "";
+  content: "\f005";
+  font-weight: 900;
 }
 
+/* half-star */
 .rating[data-rating="5.5"] .rating__item:nth-child(6):after, .rating[data-rating="4.5"] .rating__item:nth-child(5):after, .rating[data-rating="3.5"] .rating__item:nth-child(4):after, .rating[data-rating="2.5"] .rating__item:nth-child(3):after, .rating[data-rating="1.5"] .rating__item:nth-child(2):after, .rating[data-rating="0.5"] .rating__item:nth-child(1):after {
-  content: "";
+  content: "\f5c0";
+  font-weight: 900;
 }
 
 .rating {
@@ -16,10 +19,13 @@
   color: #900;
 }
 .rating__item {
-  font-size: 24px;
+  font-size: 36px;
   display: block;
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Free";
 }
+
+/* 0-star */
 .rating__item::after {
-  content: "";
+  content: '\f005';
+  font-weight: 400;
 }
