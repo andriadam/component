@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+    <title>List 2</title>
+  </head>
+  <body>
+
+    <!-- Start Recent Work -->
+    <section class="destination py-5">
+      <div class="container">
+        <div class="section-header">
+          <h2>Hotels</h2>
+        </div>
+        <div class="row gy-5 g-lg-5 mb-4">
+
+          <!-- @forelse ($destinations as $row) -->
+          
+          <div class="col-md-4 mb-3">
+            <a href="#" class="destination card border-0 overflow-hidden">
+              <img class="destination-img card-img" src="css/gunung-1.jpg" alt="Card image">
+              <div class="destination-vertical card-img-overlay d-flex align-items-end">
+                <div class="destination-content text-start mb-1 ml-3 text-dark w-100">
+                  <h3 class="card-title light-300 mb-0 pb-0">List 1</h3>
+                  <div class="my-stars m-0 p-0 d-flex">
+                    <span class="card-text" style="margin-right: auto">5 hours ago</span>
+                    <ul class="rating" data-rating="4.5">
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                    </ul>
+                    <span class="pr-1"> 4.5/5</span>
+                    <span>25</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-3">
+            <a href="#" class="destination card border-0 overflow-hidden">
+              <img class="destination-img card-img" src="css/gunung-1.jpg" alt="Card image">
+              <div class="destination-vertical card-img-overlay d-flex align-items-end">
+                <div class="destination-content text-start mb-1 ml-3 text-dark w-100">
+                  <h3 class="card-title light-300 mb-0 pb-0">List 1</h3>
+                  <div class="my-stars m-0 p-0 d-flex">
+                    <span class="card-text" style="margin-right: auto">5 hours ago</span>
+                    <ul class="rating" data-rating="4.5">
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                    </ul>
+                    <span class="pr-1"> 4.5/5</span>
+                    <span>25</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mb-3">
+            <a href="#" class="destination card border-0 overflow-hidden">
+              <img class="destination-img card-img" src="css/gunung-1.jpg" alt="Card image">
+              <div class="destination-vertical card-img-overlay d-flex align-items-end">
+                <div class="destination-content text-start mb-1 ml-3 text-dark w-100">
+                  <h3 class="card-title light-300 mb-0 pb-0">List 1</h3>
+                  <div class="my-stars m-0 p-0 d-flex">
+                    <span class="card-text" style="margin-right: auto">5 hours ago</span>
+                    <ul class="rating" data-rating="4.5">
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                      <li class="rating__item"></li>
+                    </ul>
+                    <span class="pr-1"> 4.5/5</span>
+                    <span>25</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- @empty
+          <p class="text-center text-white">No found.</p>
+          @endforelse -->
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <!-- {{ $destinations->links() }} -->
+        </div>
+      </div>
+    </section>
+    <!-- End Recent Work -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
